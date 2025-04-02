@@ -1,0 +1,26 @@
+.searchBox {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.searchBox label {
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--text-color);
+}
+
+.searchBox input {
+    width: 250px;
+    padding: 10px;
+    border: 2px solid var(--primary-color);
+    border-radius: 8px;
+    outline: none;
+    transition: border-color 0.3s ease-in-out;
+}
+
+.searchBox input:focus {
+    border-color: var(--accent-color);
+}

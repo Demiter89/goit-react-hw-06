@@ -1,0 +1,46 @@
+.contactItem {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px;
+    background: var(--primary-light);
+    border-radius: 8px;
+    transition: background 0.3s ease-in-out;
+}
+
+.contactItem:hover {
+    background: var(--primary-color);
+    color: white;
+}
+
+.contactInfo {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.contactName {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.contactNumber {
+    font-size: 14px;
+    color: var(--text-light);
+}
+
+.contactButton {
+    padding: 8px 12px;
+    font-size: 14px;
+    font-weight: 600;
+    color: white;
+    background: var(--danger-color);
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+}
+
+.contactButton:hover {
+    background: var(--danger-dark);
+}

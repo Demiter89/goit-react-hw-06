@@ -1,0 +1,14 @@
+.container {
+    width: 100%;
+    max-width: 500px;
+    padding: 20px;
+    background: var(--card-bg);
+    box-shadow: var(--shadow);
+    border-radius: 12px;
+    backdrop-filter: blur(15px);
+    transition: transform 0.3s ease-in-out;
+}
+
+.container:hover {
+    transform: scale(1.02);
+}
