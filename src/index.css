@@ -1,29 +1,43 @@
+@import "modern-normalize/modern-normalize.css";
+
 :root {
-  --primary-color: #4a90e2;
-  --secondary-color: #50e3c2;
-  --background-color: #1e1e1e;
+  --bg-color: #121212;
   --text-color: #ffffff;
-  --card-bg: rgba(255, 255, 255, 0.1);
-  --shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+  --accent-color: #ff6b6b;
+  --input-bg: #1e1e1e;
+  --border-color: #333;
+  --gradient: linear-gradient(135deg, #ff9a9e, #fad0c4);
 }
 
 body {
-  font-family: 'Arial', sans-serif;
-  background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
-  color: var(--text-color);
   margin: 0;
-  padding: 0;
+  font-family: "Arial", sans-serif;
+  background-color: #0ad1f4;
+  color: var(--text-color);
   display: flex;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
 }
 
-.container {
-  width: 400px;
-  padding: 20px;
-  background: var(--card-bg);
-  box-shadow: var(--shadow);
-  border-radius: 10px;
-  backdrop-filter: blur(10px);
+h1 {
+  text-align: center;
+  background: var(--gradient);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+button {
+  background-color: var(--accent-color);
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out;
+}
+
+button:hover {
+  background-color: #ff4757;
 }

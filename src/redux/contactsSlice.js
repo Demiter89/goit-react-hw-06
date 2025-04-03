@@ -25,5 +25,7 @@ const persistConfig = {
   storage,
 };
 
-export const contactsReducer = persistReducer(persistConfig, contactsSlice.reducer);
+const contactsReducer = persistReducer(persistConfig, contactsSlice.reducer);
+
 export const { addContact, deleteContact } = contactsSlice.actions;
+export default contactsReducer;

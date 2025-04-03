@@ -1,10 +1,9 @@
 .notification {
-    font-size: 18px;
-    font-weight: 500;
+    padding: 12px;
+    border-radius: 6px;
+    background-color: #ff4757;
+    color: white;
+    font-size: 16px;
     text-align: center;
-    color: var(--error-color);
-    padding: 10px;
-    border: 1px solid var(--error-color);
-    background: rgba(255, 0, 0, 0.1);
-    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(255, 71, 87, 0.3);
 }
